@@ -27,4 +27,26 @@ experience, combining intuitive navigation, responsive design, and real-time upd
 integration of advanced features like augmented reality, Multi-Paint redefines the paint selection
 process, allowing customers to visualize paint colors in their intended environments before making
 a purchase. This transformative approach not only simplifies decision-making but also fosters greater
-engagement and trust, positioning Multi-Paint as a leader in the paint e-commerce industry
+engagement and trust, positioning Multi-Paint as a leader in the paint e-commerce industry.
+
+
+MATLAP Explaination:
+
+I. Loading Images:
+ image1 and image2 are loaded using the imread function, representing the two images to
+be compared for color matching.
+
+II. Color Matching Function (matchImages):
+ The matchImages function converts the input images (image1 and image2) to LAB color
+space using rgb2lab.
+ Color histograms (hist1 and hist2) are calculated for the 'a' and 'b' channels of the LAB
+images.
+ Histogram intersection is computed to determine the similarity between the histograms and
+hence the images.
+ A matching score is calculated based on the intersection and displayed on the figure using
+annotation.
+
+III. Displaying Results:
+ The matched image (matchedImage) is displayed in a subplot alongside image1.
+ The matching score is shown as a text box on the figure, indicating the similarity between
+the two images in terms of color.
